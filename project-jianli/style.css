@@ -5,12 +5,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a{
+
+a {
   text-decoration: none;
-}
-img {
-  width: 50%;
 }
 
 /* Remove default margin */
@@ -93,7 +93,7 @@ select {
 
 body,
 html {
-  font-family: Helvetica;
+  font-family: '微软雅黑';
   font-size: 16px;
   overflow-x: hidden;
   background-color: var(--gray-100);
@@ -109,13 +109,24 @@ html {
   background-color: var(--green);
   color: var(--white);
 }
-.green a {
-  background-color: var(--green);
+
+.green a,
+.transparent a {
   color: var(--white);
 }
+
+.white {
+  background-color: var(--white);
+  color: var(--white);
+}
+
+.white a {
+  color: var(--green);
+}
+
 .section {
   padding: 80px 0;
-  min-width: 600px;
+  min-width: 450px;
 }
 
 .section:nth-child(even) {
@@ -125,6 +136,7 @@ html {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .section-title span {
@@ -137,7 +149,6 @@ html {
 
 .flexbasis50 {
   flex-basis: 50%;
-  border: 1px solid red;
 }
 
 /*****************header************************/
@@ -150,20 +161,25 @@ header {
   padding: 10px 0;
   z-index: 10;
 }
-header .flex{
+
+header .flex {
   justify-content: space-around;
 }
+
 header .col {
   height: 60px;
   line-height: 60px;
-  text-align: center;
 }
-header nav{
+
+header nav {
   position: relative;
 }
-nav a{
+
+nav a {
   flex-grow: 1;
+  text-align: center;
 }
+
 header .col:nth-child(1) {
   flex-grow: 4;
 }
@@ -171,41 +187,185 @@ header .col:nth-child(1) {
 header .col:nth-child(2) {
   flex-grow: 6;
 }
-header .logo i{
+
+header .logo i {
   color: var(--green);
   font-size: 2rem;
 }
-header .logo span{
+
+header .logo span {
   font-size: 2rem;
   color: var(--gray-800);
 }
-header nav span{
+
+header nav span {
   position: absolute;
   width: 120px;
   height: 3px;
-  background-color:var(--green);
+  background-color: var(--gray-800);
   left: 0;
   bottom: 0;
 }
+
 /*********login***********/
 
 #landing {
-  padding-top: 160px;
+  padding-top: 0px;
   position: relative;
 }
-.landing-img{
+
+.landing-img img {
   position: relative;
   left: 0;
   bottom: -80px;
   z-index: 5;
+  width: 80%;
 }
-.landing-bg{
+
+.landing-bg {
   position: absolute;
-  background-color: var(--green);
   width: 50%;
   height: 100%;
   left: 50%;
-  transform: skewX(25deg);
   top: 0;
   z-index: 0;
+}
+
+.landing-bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 500%;
+  height: 100%;
+  background-color: var(--green);
+  transform: skewX(25deg);
+}
+
+.landing-txt h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: .3rem;
+  color: var(--gray-800);
+}
+
+.landing-txt h1 {
+  font-size: 3rem;
+  color: var(--green);
+  letter-spacing: .3rem;
+  font-weight: 700;
+}
+
+.landing-txt p {
+  color: var(--gray-500);
+  letter-spacing: .3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.landing-txt a {
+  padding: 20px 60px;
+  border-radius: 2rem;
+}
+
+/*********about***********/
+#about {}
+
+#about .about-img {
+  position: relative;
+  top: 0;
+}
+
+#about .about-img img {
+  position: relative;
+  z-index: 10;
+  width: 70%;
+  border-bottom: 20px solid var(--green);
+}
+
+#about .about-img .about-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 700px;
+  border-left: 20px solid var(--green);
+  border-bottom: 20px solid var(--green);
+}
+#about .about-img .about-shape::after{
+  content: '';
+  position: absolute;
+  background-color: var(--green);
+  height: 20px;
+  width: 107%;
+  left: -7px;
+  top: 37.5px;
+  transform: rotate(10deg);
+}
+#about .about-img .about-shape::before{
+  content: '';
+  position: absolute;
+  background-color: var(--green);
+  height: 625px;
+  width: 20px;
+  right: -20px;
+  top: 75px;
+}
+
+/********个人经验**********/
+.skills-txt{
+  padding-right: 15px;
+  text-indent: 2em;
+  text-align: justify;
+} 
+.skills-illustrate{
+  padding-left: 15px;
+}
+.progress{
+  margin-bottom: 3px;
+  position: relative;
+}
+.progress label{
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: var(--green);
+  top: 0;
+  right: 0px;
+  border-radius: 3px;
+  z-index: 1;
+  color: var(--white);
+}
+.progress label::after{
+  content: '';
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: var(--green);
+  position: absolute;
+  bottom: -3px;
+  left: 5px; 
+  z-index: -1;
+}
+.progress:nth-child(1) label{
+  left: calc(90% - 10px);
+}
+.progress:nth-child(2) label{
+  left: calc(90% - 10px);
+}
+.progress:nth-child(3) label{
+  left: calc(85% - 10px);
+}
+.progress:nth-child(4) label{
+  left: calc(80% - 10px);
+}
+.progress:nth-child(5) label{
+  left: calc(70% - 10px);
+}
+.progress progress{
+  width: 100%;
+  color: var(--green);
 }
