@@ -369,3 +369,58 @@ header nav span {
   width: 100%;
   color: var(--green);
 }
+/*********学习经历***********/
+.timeline{
+  padding: 60px 0;
+}
+.timeline ul li{
+  width: 4px;
+  height: 200px;
+  background-color: var(--gray-500);
+  margin: 0 auto;
+  position: relative;
+}
+.timeline ul li div{
+  position: absolute;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  padding: 10px 20px;
+  bottom: -30px;
+  left: 0;
+}
+.timeline ul li:nth-child(odd) div{
+  transform: translateX(-110%);
+}
+.timeline ul li:nth-child(even) div{
+  transform: translateX(10%);
+}
+/* 点点 */
+.timeline ul li::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: calc(50% - 5px);
+  bottom: 0;
+  background-color: var(--green);
+  z-index: 10;
+}
+/* 箭头 */
+.timeline ul li div::after{
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background-color: var(--white);
+  transform: rotate(45deg);
+}
+.timeline ul li:nth-child(odd) div::after{
+  right: -8px;
+}
+.timeline ul li:nth-child(even) div::after{
+  left: -8px;
+}
