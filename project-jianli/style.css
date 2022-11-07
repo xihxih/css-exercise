@@ -126,7 +126,7 @@ html {
 
 .section {
   padding: 80px 0;
-  min-width: 450px;
+  min-height: 100vh;
 }
 
 .section:nth-child(even) {
@@ -293,7 +293,8 @@ header nav span {
   border-left: 20px solid var(--green);
   border-bottom: 20px solid var(--green);
 }
-#about .about-img .about-shape::after{
+
+#about .about-img .about-shape::after {
   content: '';
   position: absolute;
   background-color: var(--green);
@@ -303,7 +304,8 @@ header nav span {
   top: 37.5px;
   transform: rotate(10deg);
 }
-#about .about-img .about-shape::before{
+
+#about .about-img .about-shape::before {
   content: '';
   position: absolute;
   background-color: var(--green);
@@ -314,19 +316,22 @@ header nav span {
 }
 
 /********个人经验**********/
-.skills-txt{
+.skills-txt {
   padding-right: 15px;
   text-indent: 2em;
   text-align: justify;
-} 
-.skills-illustrate{
+}
+
+.skills-illustrate {
   padding-left: 15px;
 }
-.progress{
+
+.progress {
   margin-bottom: 3px;
   position: relative;
 }
-.progress label{
+
+.progress label {
   position: absolute;
   width: 50px;
   height: 25px;
@@ -339,7 +344,8 @@ header nav span {
   z-index: 1;
   color: var(--white);
 }
-.progress label::after{
+
+.progress label::after {
   content: '';
   width: 15px;
   height: 15px;
@@ -347,40 +353,49 @@ header nav span {
   background-color: var(--green);
   position: absolute;
   bottom: -3px;
-  left: 5px; 
+  left: 5px;
   z-index: -1;
 }
-.progress:nth-child(1) label{
+
+.progress:nth-child(1) label {
   left: calc(90% - 10px);
 }
-.progress:nth-child(2) label{
+
+.progress:nth-child(2) label {
   left: calc(90% - 10px);
 }
-.progress:nth-child(3) label{
+
+.progress:nth-child(3) label {
   left: calc(85% - 10px);
 }
-.progress:nth-child(4) label{
+
+.progress:nth-child(4) label {
   left: calc(80% - 10px);
 }
-.progress:nth-child(5) label{
+
+.progress:nth-child(5) label {
   left: calc(70% - 10px);
 }
-.progress progress{
+
+.progress progress {
   width: 100%;
   color: var(--green);
 }
+
 /*********学习经历***********/
-.timeline{
+.timeline {
   padding: 60px 0;
 }
-.timeline ul li{
+
+.timeline ul li {
   width: 4px;
   height: 200px;
   background-color: var(--gray-500);
   margin: 0 auto;
   position: relative;
 }
-.timeline ul li div{
+
+.timeline ul li div {
   position: absolute;
   width: 300px;
   border-radius: 15px;
@@ -389,14 +404,17 @@ header nav span {
   bottom: -30px;
   left: 0;
 }
-.timeline ul li:nth-child(odd) div{
+
+.timeline ul li:nth-child(odd) div {
   transform: translateX(-110%);
 }
-.timeline ul li:nth-child(even) div{
+
+.timeline ul li:nth-child(even) div {
   transform: translateX(10%);
 }
+
 /* 点点 */
-.timeline ul li::after{
+.timeline ul li::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -407,8 +425,9 @@ header nav span {
   background-color: var(--green);
   z-index: 10;
 }
+
 /* 箭头 */
-.timeline ul li div::after{
+.timeline ul li div::after {
   content: '';
   width: 15px;
   height: 15px;
@@ -418,9 +437,52 @@ header nav span {
   background-color: var(--white);
   transform: rotate(45deg);
 }
-.timeline ul li:nth-child(odd) div::after{
+
+.timeline ul li:nth-child(odd) div::after {
   right: -8px;
 }
-.timeline ul li:nth-child(even) div::after{
+
+.timeline ul li:nth-child(even) div::after {
   left: -8px;
+}
+
+/* ********作品集********* */
+#portfolio .tags .col {
+  justify-content: center;
+}
+
+#portfolio .tags .col span {
+  padding: 5px 20px;
+  text-align: center;
+}
+#portfolio .tags .col span.active{
+  color: var(--green);
+  border-bottom: 3px solid var(--green);
+}
+#portfolio .projects{
+  flex-wrap: wrap;
+}
+#portfolio .projects li:hover{
+  background-color: var(--white);
+}
+#portfolio .projects li{
+  flex-basis: 33.3%;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio .projects .iconfont{
+  font-size: 40px;
+  background-color: var(--gray-800);
+  color: var(--white);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.icon-html5{
+  padding-right: 5px;
 }
