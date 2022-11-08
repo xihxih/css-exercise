@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景源</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dotted black;
+            background-image: url(./image/dog.jpg);
+            background-repeat: no-repeat;
+        }
+        .box1{
+            /* background-origin: border-box; */
+            background-position: 20px 20px;
+        }
+        .box2{
+            /* background-position: 20px 20px; */
+            background-origin: padding-box;
+        }
+        .box3{
+            /* background-position: 20px 20px; */
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3">45454</div>
+
+</body>
+</html>

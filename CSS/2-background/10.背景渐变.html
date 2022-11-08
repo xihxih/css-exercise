@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景渐变色</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dotted black;
+            background-repeat: no-repeat;
+            /* background-size: 20px 20px; */
+        }
+        .linear1{
+            /* background-image: linear-gradient(渐变角度,颜色列表); */
+            background-image: linear-gradient(180deg,red,green,blue);
+        }
+        .linear2{
+            /* background-image: linear-gradient(渐变角度,颜色列表); */
+            background-image: linear-gradient(180deg,red,red 40%,green 40%,green 80%,blue 80%);
+        }
+        .linear3{
+            /* background-image: linear-gradient(渐变角度,颜色列表); */
+            background-image: linear-gradient(45deg,aqua,red,green,blue);
+        }
+        .linear4{
+            /* background-image: linear-gradient(渐变角度,颜色列表); */
+            background-image: linear-gradient(90deg,#002153,#002153 33.3%,#fff 33.3%,#fff 66.6%,red 66.6%);
+        }
+        .linear5{
+            /* background-image: linear-gradient(渐变角度,颜色列表); */
+            background-image: linear-gradient(45deg,aqua 25%,transparent 25%,transparent 75%,green 75%),linear-gradient(-45deg,aqua 25%,transparent 25%,transparent 75%,green 75%);
+            background-size: 20px 20px;
+            background-repeat: repeat;
+        }
+        .radial1{
+            background-image: radial-gradient(
+                ellipse,
+                yellow,
+                red
+            );
+        }
+        .radial2{
+            width: 400px;
+            background-image: radial-gradient(
+                circle at top right,
+                yellow,
+                red
+            );
+        }
+        .radial3{
+            background-image: radial-gradient(
+                circle closest-side,
+                yellow,
+                red
+            );
+        }
+        .radial4{
+            background-image: radial-gradient(
+                circle closest-side,
+                yellow,
+                red
+            );
+        }
+        .conic1{
+            background-image: conic-gradient(
+                aqua,pink,yellowgreen
+            );
+        }
+        .conic2{
+            background-image: conic-gradient(
+                from 45deg,
+                aqua,pink,yellowgreen
+            );
+        }
+        .conic3{
+            background-image: conic-gradient(
+                at 70% 50%,
+                aqua,pink,yellowgreen,aqua
+            );
+        }
+    </style>
+</head>
+<body>
+    linear-gradient(渐变角度,颜色列表)
+    <div class="box linear1"></div>
+    <div class="box linear2"></div>
+    <div class="box linear3"></div>
+    <div class="box linear4"></div>
+    <div class="box linear5"></div>
+    background-image: radial-gradient(渐变形状 渐变位置,颜色列表);
+    <div class="box radial1"></div>
+    <div class="box radial2"></div>
+    <div class="box radial3"></div>
+    <div class="box radial4"></div>
+    background-image:conic-gradient(角度，颜色列表)；
+   <div class="box conic1"></div>
+   <div class="box conic2"></div>
+   <div class="box conic3"></div>
+   <div class="box conic4"></div>
+   <div class="box conic5"></div>
+   <div class="box conic6"></div>
+   <div class="box conic7"></div>
+   <div class="box conic8"></div>
+   <div class="box conic9"></div>
+   <div class="box conic10"></div>
+</body>
+</html>

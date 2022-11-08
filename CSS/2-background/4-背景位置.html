@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景位置</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dotted black;
+            background-image: url(./image/bg.jpg);
+            background-repeat: no-repeat;
+        }
+        .box1{
+            /* background-position: 水平偏移 垂直偏移; */
+            background-position: 0 0; /*左上角*/
+        }
+        .box2{                                                         
+            background-position: left top;
+        }
+        .box3{
+            background-position: 0% 0%;
+        }
+        .box4{
+            background-position: 190px 0; /*右上角*/
+        }
+        .box5{
+            background-position: right top;
+        }
+        .box6{
+            background-position: 100% 0%;
+        }
+        .box7{
+            background-position: 0 190px; /*左下角*/
+        }
+        .box8{
+            background-position: left bottom;
+        }
+        .box9{
+            background-position: 0% 100%;
+        }
+        .box10{
+            background-position: 190px 190px; /*右下角*/
+        }
+        .box11{
+            background-position: right bottom;
+        }
+        .box12{
+            background-position: 100% 100%;
+        }
+        .box13{
+            background-position: 95px 95px; /*中间*/
+        }
+        .box14{
+            background-position: center center;
+        }
+        .box15{
+            background-position: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    1.background-position: 0 0
+    <div class="box box2"></div>
+    2.background-position: left top
+    <div class="box box3"></div>
+    3.background-position: 0% 0%
+    <div class="box box4"></div>
+    4.background-position: 190px 0
+    <div class="box box5"></div>
+    5.background-position: right top
+    <div class="box box6"></div>
+    6.background-position: 100% 0%
+    <div class="box box7"></div>
+    7.background-position: 0 190px
+    <div class="box box8"></div>
+    8.background-position: left bottom
+    <div class="box box9"></div>
+    9.background-position: 0% 100%
+    <div class="box box10"></div>
+    10.background-position: 190px 190px
+    <div class="box box11"></div>
+    11.background-position: right bottom
+    <div class="box box12"></div>
+    12.background-position: 100% 100%
+    <div class="box box13"></div>
+    13.background-position: 95px 95px
+    <div class="box box14"></div>
+    14.background-position: center center
+    <div class="box box15"></div>
+    15.background-position: 50% 50%
+</body>
+</html>

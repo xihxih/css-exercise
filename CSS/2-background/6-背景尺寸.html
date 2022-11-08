@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景尺寸</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            border: 20px solid black;
+            background-image: url(./image/dog.jpg);
+            background-repeat: no-repeat;
+        }
+        .box1{
+            background-size: auto;/*默认值*/
+        }
+        .box2{
+            background-size:contain;/*使图片宽和视口宽度一样*/
+        }
+        .box3{
+            background-size: cover;/*使图片高和视口高一样*/
+        }
+        .box4{
+            background-size: 100% 50%; /*前为宽，后为高*/
+        }
+        .box5{
+            background-size: 100px 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+</body>
+</html>

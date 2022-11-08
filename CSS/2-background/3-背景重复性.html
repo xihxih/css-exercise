@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景重复性</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px solid black;
+            background-image: url(./image/bg.jpg);
+        }
+        .box1{
+            background-repeat: repeat;/*默认重复*/
+        }
+        .box2{
+            background-repeat: repeat-x;/*水平重复*/
+        }
+        .box3{
+            background-repeat: repeat-y;/*垂直重复*/
+        }
+        .box4{
+            background-repeat: no-repeat;/*不重复*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>background-repeat: repeat;/*默认重复*/
+    <div class="box box2"></div>background-repeat: repeat-x;/*水平重复*/
+    <div class="box box3"></div>background-repeat: repeat-y;/*垂直重复*/
+    <div class="box box4"></div>background-repeat: no-repeat;/*不重复*/
+</body>
+</html>

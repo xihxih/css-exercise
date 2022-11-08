@@ -455,24 +455,29 @@ header nav span {
   padding: 5px 20px;
   text-align: center;
 }
-#portfolio .tags .col span.active{
+
+#portfolio .tags .col span.active {
   color: var(--green);
   border-bottom: 3px solid var(--green);
 }
-#portfolio .projects{
+
+#portfolio .projects {
   flex-wrap: wrap;
 }
-#portfolio .projects li:hover{
+
+#portfolio .projects li:hover {
   background-color: var(--white);
 }
-#portfolio .projects li{
+
+#portfolio .projects li {
   flex-basis: 33.3%;
   padding: 50px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#portfolio .projects .iconfont{
+
+#portfolio .projects .iconfont {
   font-size: 40px;
   background-color: var(--gray-800);
   color: var(--white);
@@ -483,6 +488,42 @@ header nav span {
   border-radius: 50%;
   margin-bottom: 30px;
 }
-.icon-html5{
+
+.icon-html5 {
   padding-right: 5px;
+}
+
+/* ************联系方式************** */
+#contact {
+  /* width: 1200px; */
+  margin: 0 auto;
+}
+
+#contact .flex {
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+#contact .flex li {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact .flex li i {
+  font-size: 110px;
+}
+
+/* ************页尾********************* */
+.dark-gray {
+  text-align: center;
+  height: 300px;
+  color: aliceblue;
+  background-color: var(--gray-800);
+  line-height: 300px;
+}
+
+.dark-gray a {
+  color: aliceblue;
 }

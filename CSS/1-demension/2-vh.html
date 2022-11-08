@@ -8,21 +8,34 @@
     <style>
         *{
             margin: 0;
+            
+        }
+        html{
+            font-size: 62.5%;
         }
         .container{
-            width: 30%;
+            width: 30vw;
             height: 100vh;
             background-color: yellow;
+            margin: 0 auto;
+            font-size: 2rem;
+        }
+        .box{
+            height: 20vh;
+            font-size: 2em;
+        }
+        .container .box:nth-child(odd){
+            background-color: pink;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">20%</div>
+        <div class="box">40%</div>
+        <div class="box">60%</div>
+        <div class="box">80%</div>
+        <div class="box">100%</div>
     </div>
 </body>
 </html>
