@@ -238,7 +238,7 @@ header nav span {
 .landing-img img {
   position: relative;
   left: 0;
-  bottom: -80px;
+  bottom: -166px;
   z-index: 5;
   width: 80%;
 }
@@ -526,23 +526,23 @@ header nav span {
 }
 
 #contact .flex li {
-  height: 300px;
+  /* height: 300px; */
   width: 300px;
   text-align: center;
   font-weight: bold;
 }
 
 #contact .flex li i {
-  font-size: 110px;
+  font-size: 50px;
 }
 
 /* ************页尾********************* */
 .dark-gray {
   text-align: center;
-  height: 300px;
+  /* height: 300px; */
   color: aliceblue;
   background-color: var(--gray-800);
-  line-height: 300px;
+  /* line-height: 300px; */
 }
 
 .dark-gray a {
