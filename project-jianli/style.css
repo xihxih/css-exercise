@@ -518,8 +518,8 @@ header nav span {
 #contact {
   /* width: 1200px; */
   margin: 0 auto;
+  min-height: 70vh;
 }
-
 #contact .flex {
   margin-top: 60px;
   justify-content: space-around;
@@ -539,10 +539,10 @@ header nav span {
 /* ************页尾********************* */
 .dark-gray {
   text-align: center;
-  /* height: 300px; */
+  height: 30vh;
   color: aliceblue;
-  background-color: var(--gray-800);
-  /* line-height: 300px; */
+  background-color: var(--green);
+  line-height: 30vh;
 }
 
 .dark-gray a {
