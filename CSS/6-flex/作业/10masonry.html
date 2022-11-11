@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: stretch;
+            border: 1px red solid;
+        }
+
+        .box div {
+            background-color: aqua;
+            height: 60px;
+        }
+        .box .box2{
+            flex-basis: 80px;
+        }
+        .box .box5 {
+            flex-basis: 120px;
+        }
+        .box .box6 {
+            flex-grow: 2;
+        }
+        .box .box8 {
+            height: 80px;
+        }
+        .box .box10{
+            height: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+    </div>
+</body>
+
+</html>

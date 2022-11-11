@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用flex盒模型实现瀑布流布局</title>
+	<style>
+		*{padding: 0px;margin: 0px;}
+		.box{display:flex;
+			 flex-wrap: wrap;
+		}
+		.box img{flex-grow: 1; 
+				 margin:5px;
+				 height:200px;
+				 object-fit: cover; 
+		}
+
+		@media (min-width: 1200px){
+			/*nth-last-of-type(n) 选择器匹配属于父元素的特定类型的第n个子元素的每个元素，从最后一个子元素开始计数，n 可以是数字、关键词或公式*/
+			.box img:nth-last-of-type(-n+5){
+				flex-grow: 0
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+		<img src="flexbox.png" alt="">
+	</div>
+
+
+</body>
+</html>

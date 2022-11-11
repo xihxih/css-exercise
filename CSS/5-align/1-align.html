@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            line-height: 1.5;
+        }
+        .box{
+            text-align: center; /* 块元素内容水平对齐 */
+            width: 600px;
+            height: 300px;
+            background-color: yellow;
+            margin: 0 auto;/* 块元素水平对齐 */
+            line-height: 300px/* 块元素内容垂直对齐 单行文本*/
+        }
+        .box1{
+            text-align: center; /* 块元素内容水平对齐 */
+            width: 600px;
+            background-color: aqua;
+            margin: 0 auto;/* 块元素水平对齐 */
+            padding: 46px 0;
+        }
+        .box1 p{
+            background-color: greenyellow;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .box2{
+            text-align: center; /* 块元素内容水平对齐 */
+            width: 600px;
+            background-color: aqua;
+            margin: 0 auto;/* 块元素水平对齐 */
+            padding-top: 100px;
+        }
+        .box2 p{
+            background-color: greenyellow;
+            width: 50%;
+            margin: 0 auto;
+        }
+        table{
+            width: 600px;
+            margin: 0 auto;
+            border: none;
+        }
+        td:nth-child(1){
+            text-align: center;
+            vertical-align: middle;
+            height: 100px;
+        }
+        td:nth-child(2){
+            text-align: center;
+            vertical-align: bottom;
+            height: 100px;
+        }
+        td:nth-child(3){
+            text-align: center;
+            vertical-align: top;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>hello world! </p>
+    </div>
+    居中对齐
+    <div class="box1">
+        <p>hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world!  </p>
+    </div>
+    底部对齐
+    <div class="box2">
+        <p>hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world!  </p>
+    </div>
+    <table border="1">
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+        </tr>
+    </table>
+</body>
+</html>
