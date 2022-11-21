@@ -5,61 +5,625 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>仿极客公园-Geek Things Up !</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3775208_hq8r609itet.css">
 </head>
+<div id="app">
+    <!-- header开始 -->
+    <div id="header">
+        <header class="hide-big">
+            <div class="container">
+                <div class="row flex">
+                    <div class="logo">
+                        <a href="javascript:">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="flex">
+                        <a href="javascript:" class="active">资讯</a>
+                        <a href="javascript:">活动</a>
+                        <a href="javascript:">前沿社</a>
+                    </nav>
+                    <div class="search-btn">
+                        <a href="javascript:"><i class="iconfont icon-icon_search"></i></a>
+                    </div>
+                    <div class="login-btn">
+                        <a href="javascript:" class="black-block">登录</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="hide-small">
+            <div class="container">
+                <div class="row flex">
+                    <a href="javascript:">
+                        <i class="iconfont icon-icon_menu"></i>
+                    </a>
+                    <div class="logo">
+                        <a href="javascript:">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <a href="javascript:">
+                        <i class="iconfont icon-icon_search"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- header结束 -->
+    <!-- main-body开始 -->
+    <div id="main-body">
+        <!-- 二级导航开始 -->
+        <section id="sub-nav">
+            <div class="container">
+                <div class="row">
+                    <nav class="flex">
+                        <a href="">
+                            <span data-item="极客之选">极客之选</span>
+                        </a>
+                        <a href="">
+                            <span data-item="产品观察">产品观察</span>
+                        </a>
+                        <a href="">
+                            <span data-item="极客出行">极客出行</span>
+                        </a>
+                        <a href="" title="顶楼TopView">
+                            <span data-item="顶楼TopView">顶楼TopView</span>
+                        </a>
+                        <a href="" title="挖App">
+                            <span data-item="挖App">挖App</span>
+                        </a>
+                        <a href="">
+                            <span data-item="图赏">图赏</span>
+                        </a>
+                        <a href="">
+                            <span data-item="行业资讯">行业资讯</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- 二级导航结束 -->
+        <!-- 头条开始 -->
+        <section id="tt">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col">
+                        <div class="tt-item">
+                            <a href="#">
+                                <div class="tt-img">
+                                    <img src="./images/tt/tt2.jpg" alt="">
+                                </div>
+                                <div class="tt-text">
+                                    <h2><span>Up&Coming，极客公园创新大会 2023 来了！</span></h2>
+                                    <p>记录与见证科技行业的 2022。</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col flex">
+                        <div class="col1 flex">
+                            <div class="tt-item">
+                                <a href="#">
+                                    <div class="tt-img">
+                                        <img src="./images/tt/tt1.jpg" alt="">
+                                    </div>
+                                    <div class="tt-text">
+                                        <h3><span>学习马斯克好榜样，硅谷裁员「理直气壮」</span></h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tt-item">
+                                <a href="#">
+                                    <div class="tt-img">
+                                        <img src="./images/tt/tt3.jpg" alt="">
+                                    </div>
+                                    <div class="tt-text">
+                                        <h3><span>从线上 K 歌到元宇宙，「实时互动」的八年进化</span></h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col1 flex">
+                            <div class="tt-item">
+                                <a href="#">
+                                    <div class="tt-img">
+                                        <img src="./images/tt/tt4.jpg" alt="">
+                                    </div>
+                                    <div class="tt-text">
+                                        <h3><span>这家公司，造出了《万神殿》里面的技术</span></h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tt-item">
+                                <a href="#">
+                                    <div class="tt-img">
+                                        <img src="./images/tt/tt5.jpg" alt="">
+                                    </div>
+                                    <div class="tt-text">
+                                        <h3><span>我们想象的 AI，也许已经过时了</span></h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 头条结束 -->
+        <div id="main-content">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col" id="news-list">
+                        <!-- 新闻列表开始 -->
+                        <main>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                岚图汽车完成近 50 亿融资；暴雪将在中国大陆暂停多数游戏服务；黑五将至，贝佐斯劝消费者省钱
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">记录与见证科技行业的 2022。</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-item">
+                                <div class="row flex">
+                                    <div class="col news-item-img">
+                                        <a href="">
+                                            <img src="./images/n1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col news-item-text flex-column">
+                                        <div>
+                                            <a href="" class="block-gray">今日看点</a>
+                                            <span class="gray">14小时前</span>
+                                        </div>
+                                        <h2>
+                                            <a href="">
+                                                Up&Coming，极客公园创新大会 2023 来了！
+                                            </a>
+                                        </h2>
+                                        <p class="gray">2022 胡润慈善榜发布，刘强东、王兴、雷军成前三；腾讯三季度营收 1401 亿元，净利润同比上涨 2%；特斯拉中国调整产品交付周期，交付时间缩短2022 胡润慈善榜发布，刘强东、王兴、雷军成前三；腾讯三季度营收 1401 亿元，净利润同比上涨 2%；特斯拉中国调整产品交付周期，交付时间缩短</p>
+                                        <div class="author flex">
+                                            <a href="">
+                                                <img src="./images/icons/100000333.jpeg" alt="">
+                                                <span class="gray">极客公园</span>
+                                            </a>
+                                            <i class="iconfont icon-aixinD gray">1</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </main>
+                        <!-- 新闻列表结束 -->
+                    </div>
+                    <div class="col" id="sidebar">
+                        <!-- 边栏开始 -->
+                        <aside class="flex-column">
+                            <div class="hot-news flex-column">
+                                <h3>七日热门</h3>
+                                <div class="hot-news-list">
+                                    <div class="row hot-news-item">
+                                        <div class="hot-news-item-img">
+                                            <img src="./images/n25.png" alt="">
+                                            <span class="shuzi">1</span>
+                                        </div>
+                                        <p>Meta 裁员 1 万人，小扎：我的错；亚马逊市值蒸发 1 万亿美元；推特拒绝特斯拉负面广告</p>
+                                    </div>
+                                </div>
+                                <div class="hot-news-list">
+                                    <div class="row hot-news-item flex-column">
+                                        <div class="hot-news-item-img">
+                                            <img src="./images/n25.png" alt="">
+                                            <span class="shuzi">1</span>
+                                        </div>
+                                        <p>加密交易所大战结束，币安收购 FTX；传歌尔遭苹果「砍单」耳机生产；万维网创始人：Web3 根本不是 Web</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="it-news">
+                                <h3>行业资讯</h3>
+                                <div class="it-news-list">
+                                    <div class="row it-news-item">
+                                        <div>
+                                            <img src="./images/n26.png" alt="">
+                                        </div>
+                                        <p>
+                                            车企都想造机器人？岚图发布 ESSA+SOA 智能电动仿生体
+                                        </p>
+                                    </div>
+                                    <div class="row it-news-item">
+                                        <div>
+                                            <img src="./images/n26.png" alt="">
+                                        </div>
+                                        <p>
+                                            车企都想造机器人？岚图发布 ESSA+SOA 智能电动仿生体
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special-news">
+                                <h3>专题</h3>
+                                <div class="special-news-list">
+                                    <div><img src="./images/n35.jpg" alt=""></div>
+                                    <div><img src="./images/n36.jpg" alt=""></div>
+                                    <div><img src="./images/n37.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- 边栏结束 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-body结束 -->
+    <!-- 边栏导航开始 -->
+    <div class="feedback">
+        <ul>
+            <li>
+                <a href="">
+                    <i class="iconfont"></i>
+                    <div class="hide">
+                        <div>
+                            <nav>
+                                <a href="">极客公园</a>
+                                <a href="">极客之选</a>
+                                <a href="">顶楼TopView</a>
+                            </nav>
+                            <div>
+                                <div class="tab-content">
+                                    <div>
+                                        <img src="./images/erweima/100002146.qr_geekpark.jpg" alt="">
+                                    </div>
+                                    <p>用极客视角，追踪你不可错过的科技圈。</p>
+                                </div>
+                                <div class="tab-content">
+                                    <div>
+                                        <img src="./images/erweima/100002080.qr_geekchoice.jpg" alt="">
+                                    </div>
+                                    <p>新鲜、有趣的硬件产品，第一时间为你呈现</p>
+                                </div>
+                                <div class="tab-content">
+                                    <div>
+                                        <img src="./images/erweima/100002113.qr_topview.jpg" alt="">
+                                    </div>
+                                    <p>关注前沿科技，发表具有科技的商业洞见</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="iconfont"></i>
+                    <div class="hide">意见反馈</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="iconfont"></i>
+                    <div class="hide">返回顶部</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 边栏导航结束 -->
+    <!-- footer开始 -->
+    <footer id="footer">
+        <div class="footer-nav">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col contact-us">
+                        <h4>联系我们</h4>
+                        <p>联系电话：8610-84599761</p>
+                        <p>联系邮箱：<a href="mailto:contact@geekpark.net">contact@geekpark.net</a></p>
+                        <p>公司地址：北京市朝阳区酒仙桥路4号751 D·Park<br>正东集团院内 C8座105室 极客公园</p>
+                        <div class="social">
+                            <span> 关注我们：</span>
+                            <i class="iconfont icon-weibo"></i>
+                            <i class="iconfont icon-zhihu"></i>
+                            <i class="iconfon icon-icon_wechat">
+                                <img src="./images/erweima/100002146.qr_geekpark.jpg" alt="极客公园微信公众平台">
+                            </i>
+                            <i class="iconfont icon-RSS"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4>关于</h4>
+                        <ul>
+                            <li>关于极客公园</li>
+                            <li>寻求报道</li>
+                            <li>加入我们</li>
+                            <li>友情链接</li>
+                            <li>APP下载</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>云服务支持</h4>
+                        <ul>
+                            <li><a href=""><img src="./images/logo/100002179.qiniu_1.png" alt=""></a></li>
+                            <li><a href=""><img src="./images/logo/100002212.qingyun.png" alt=""></a></li>
+                            <li><a href=""><img src="./images/logo/100002245.huode_scene_3.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>app下载</h4>
+                        <div>
+                            <img src="./images/erweima/100002146.qr_geekpark.jpg" alt="">
+                            <p>iOS & Android</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            <div class="container">
+                <div class="row flex">
+                    <div class="col">
+                        <a href="#" target="_blank">京ICP备13016923号-2|</a><a href="#"
+                            target="_blank">京公网安备11010502034250号</a>
+                    </div>
+                    <div class="col">
+                        <span>北京传奇极客管理咨询有限公司</span>
+                        <span>Copyright © 2009 - 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer结束 -->
+</div>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
 
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-
-                </div>
-            </div>
-
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <main>
-            <div class="container">
-               <article>
-                    <section>
-                        <img src="" alt="">
-                    </section>
-                    <section>
-                        <div><span>分类标签</span><time>发布时间</time></div>
-                        <h2><a href="">标题</a></h2>
-                        <div><img src="" alt=""><span>作者</span></div>
-                    </section>
-               </article>
-            </div>
-        </main>
-        <aside></aside>
-    </section>
-    <footer>
-
-    </footer>
 </body>
 
 </html>

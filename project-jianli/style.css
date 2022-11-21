@@ -63,7 +63,18 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 2;
 }
-
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "阿里妈妈数黑体 Bold";
+  font-weight: 700;
+  src: url("//at.alicdn.com/wf/webfont/2swK20lsRmOi/3GQYkd4N2nIUxMLGZF0XB.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/2swK20lsRmOi/MB2ctrTHpgav4XdjDMNh5.woff") format("woff");
+  font-display: swap;
+}
+.wenyue{
+  font-family: "阿里妈妈数黑体 Bold";
+  font-weight: 900;
+}
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;

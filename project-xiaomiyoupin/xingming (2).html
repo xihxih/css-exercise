@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米精选</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <div class="top-bar">
                 <!--黑色背景-->
                 <div class="container">
-                    <div class="col">
+                    <div class="col flex">
                         <a href="">登录</a>
                         <a href="">注册</a>
                         <a href="">帮助中心</a>
@@ -25,12 +26,12 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row flex bottom-nav">
                     <div class="col">
                         <img src="./images/1-logo/logo.png" alt="小米有品的logo">
                     </div>
                     <div class="col">
-                        <ul>
+                        <ul class="flex">
                             <li><a href="">有品秒杀</a></li>
                             <li><a href="">企业采购</a></li>
                         </ul>
@@ -43,10 +44,10 @@
                 </div>
             </div>
         </header>
-        <section>
-            <div class="container">
+        <section id="lbt">
+            <div class="container flex">
                 <div class="col">
-                    <ul>
+                    <ul class="flex">
                         <li>有品推荐 / 小米自营</li>
                         <li>日常元素 / 手机数码</li>
                         <li>小米电视 / 电脑办公</li>
@@ -63,14 +64,14 @@
                     <div></div>
                     <!--这里拿背景图做雪碧图-->
                     <img src="./images/2-sliders/slider1.png" alt="">
-                    <img src="./images/2-sliders/slider2.png" alt="">
-                    <img src="./images/2-sliders/slider3.png" alt="">
+                    <img src="./images/2-sliders/slider2.jpg" alt="">
+                    <img src="./images/2-sliders/slider3.jpg" alt="">
                     <img src="./images/2-sliders/slider4.png" alt="">
                     <img src="./images/2-sliders/slider5.png" alt="">
                     <div></div>
                     <!--这里拿背景图做雪碧图-->
-                    <div class="banner-btn">
-                        <div></div>
+                    <div class="banner-btn flex">
+                        <div class="action"></div>
                         <!--这里是banner的下面5个圆点-->
                         <div></div>
                         <div></div>
@@ -80,10 +81,10 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="ci-nav">
             <div class="container">
                 <nav>
-                    <ul>
+                    <ul class="flex">
                         <li>
                             <a href="">
                                 <img src="./images/3-icons/icon1.png" alt="">
@@ -131,7 +132,7 @@
                                     <a href="#">更多<img src="" alt=""></a>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row flex">
                                 <div class="col">
                                     <div class="top">
                                         <h3>海洋智能生态鱼缸</h3>
@@ -191,7 +192,7 @@
                                     <a href="#">更多<img src="" alt=""></a>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row flex">
                                 <div class="col">
                                     <div class="top">
                                         <img src="./images/5-ypms/ypms1.jpg" alt="">
@@ -244,7 +245,7 @@
                                     <a href="#">更多<img src="" alt=""></a>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row flex">
                                 <div class="col">
                                     <div class="top">
                                         <img src="./images/6-mrxp/mrxp1.jpg" alt="">
@@ -297,7 +298,7 @@
                     <div class="row">
                         <h2>为你推荐</h2>
                     </div>
-                    <div class="row">
+                    <div class="row flex">
                         <div class="col">
                             <div><img src="./images/7-wntj/wntj1.png" alt=""></div>
                             <p>9挡火力调节</p>
@@ -382,7 +383,7 @@
                 </div>
             </section>
         </main>
-        <aside>
+        <aside class="side-nav">
             <div class="container">
                 <ul>
                     <li>
@@ -409,7 +410,7 @@
             </div>
         </aside>
         <footer>
-            <div class="container">
+            <div class="container flex">
                 <div class="col logo">
                     <img src="./images/1-logo/logo.png" alt="">
                 </div>
